@@ -1,0 +1,593 @@
+/*####################################
+#
+#	Autor: Hector Sevilla
+#	Descripcion: Hoja de estilos para 
+#				 la plantilla web de 
+				 Pelican Eyes
+#	Fecha: 23/10/2014
+#	Hora: 11:30
+#
+#	1- Cabecera
+#	2- Menu
+#	3- Slider
+#	4- Seccion Principal
+#	5- Reviews
+#	6- mapa
+#	7- Redes Sociales
+#	8- Footer
+#	9- Mediaquery
+#####################################*/
+
+@import 'fonts.styl'
+@import 'normalize.styl'
+//@import 'bxslider.styl'
+@import 'nib'
+
+
+//Colores
+celeste= #67b7cf
+amarillo = #fdb435
+texto = #6c7f86
+texto-gris = #767676
+cabeceras = #1b5882
+gris-bajo = #f0f5f7
+enlaces = #79929a
+azul-puro= #0a1928
+
+//OOCSS
+
+.relativo
+	position relative
+.absoluto
+	position absolute
+.fix
+	overflow hidden
+.left
+	float left
+.right
+	float right
+
+[class^="icon-"], [class*=" icon-"]
+	font-family 'icomoon'
+	speak none
+	font-style normal
+	font-weight normal
+	font-variant normal
+	text-transform none
+	line-height 1
+	-webkit-font-smoothing antialiased
+	-moz-osx-font-smoothing grayscale
+
+.icon-search
+	&:before
+		content: "\f002"
+
+.icon-map
+	&:before
+		content: "\f041"
+
+.icon-play
+	&:before
+		content: "\f04b"
+
+.icon-twitter
+	&:before
+		content: "\f099"
+
+.icon-facebook
+	&:before
+		content: "\f09a"
+
+.icon-group
+	&:before
+		content: "\f0c0"
+
+.icon-quote-left
+	&:before
+		content: "\f10d"
+
+alinear()
+	display inline-block
+	vertical-align top
+rem(pixel)
+	(pixel/16)rem
+html
+	font-size: 16px
+a
+	text-decoration none
+ul
+p
+figure
+	margin 0
+	padding 0
+ul
+	list-style none
+
+body
+	font-family: OSansReg
+	font-size: 16px
+	font-weight: normal
+h2
+	color texto
+	font-family: JosefinLight
+	font-size: rem(26)
+	font-weight: bold
+
+/*****************************************
+*	1- Cabecera
+******************************************/
+header
+	padding 5px 1rem
+	figure
+		text-align: center
+		margin 5px 0
+	.sprite
+		text-align: right
+		li
+			alinear()
+			a
+				background-image: url(../img/spriteSocial.png)
+				display block
+				height 34px
+				margin 0 8px
+				width 34px
+			.fb
+				background-position: 0 0
+			.tw
+				background-position: -55px 0
+			.g
+				background-position: -108px 0
+			.pin
+				background-position: -162px 0
+				margin-right 0
+	.contact
+		text-align: right
+		margin-top: 1rem
+		p
+			color texto
+			font-size: .8rem
+			margin 7px 0
+			a
+				&:link
+				&:visited
+					color texto
+					font-size: .8rem
+/*****************************************
+*	2- Menu
+******************************************/
+
+/*****************************************
+*	3- Slider
+******************************************/
+.slide
+.banner
+	font-size: 0
+	img
+		max-width 100%
+		height auto
+/*****************************************
+*	4- Seccion Principal
+******************************************/
+section
+	background-color: gris-bajo
+	padding 2rem 1rem
+	.wrap
+		h1
+			color cabeceras
+			font-family: JosefinLight
+			font-size: rem(48)
+			text-align: center
+			margin-top 0
+		.texto
+			color texto
+			font-family: OSansReg
+			font-size: rem(14)
+			a
+			.mail
+				&:link
+				&:visited
+					color texto
+					font-weight: bold
+					text-decoration: underline
+			ul
+				margin 1rem auto
+				li
+					color texto
+			li
+				padding-bottom: .6rem
+				padding-left: 1rem
+				padding-top: .6rem
+				span
+					padding 0 1rem
+		h4
+			color texto
+			font-family: JosefinLight
+			font-size: rem(48)
+			text-align: center
+			text-transform: uppercase
+		h5
+			font-size: rem(24)
+			text-transform: capitalize
+			color texto
+/*****************************************
+*	5- Reviews
+******************************************/
+.reviews
+	padding rem(65) 1rem
+	.review
+		text-align: center
+		.circulo
+			background-color: gris-bajo
+			border-radius 50%
+			box-sizing border-box
+			height rem(92)
+			line-height 2
+			margin 10px auto
+			padding 1.5rem 0
+			max-width rem(92)
+			span
+				color amarillo
+				font-size: rem(36)
+		p
+			font-family: OSansLightIt
+			font-size: rem(14)
+			margin 10px 0 2rem 0
+		a
+			&:link
+			&:visited
+				color enlaces
+				font-family: OSansSem
+				font-size: rem(18)
+			&:hover
+				color amarillo
+	.caja
+		color texto
+		text-align: center
+		border-bottom 1px solid #ccc
+		padding-bottom 1rem
+		margin 2rem auto 
+		figure
+			position relative
+			img
+				max-width 100%
+				height auto
+			.hover
+				background-color: azul-puro
+				left -99999
+				opacity: 0
+				position absolute
+				right 0
+				top 0
+				height 195px
+				box-sizing: border-box
+				padding-top 5rem
+				transition all ease .5s 
+				a
+					&:link
+					&:visited
+						color white
+				span
+					font-size: rem(40)
+					opacity 1
+			&:hover
+				.hover
+					left 0
+					opacity .6
+		p
+			font-family: OSansReg
+		h3
+			font-family: OSansReg
+			font-size: rem(18)
+		&:last-child
+			border-bottom 0
+		.contenido
+			ul
+				margin 1rem auto
+/*****************************************
+*	6- mapa
+******************************************/
+.mapa
+	height rem(370)
+	width auto
+/*****************************************
+*	7- Redes Sociales
+******************************************/
+.redesSociales
+	background-repeat: repeat-y
+	background-position: top center
+	background-color: #0B2138
+	padding 1rem
+	width auto
+	.widget
+		background-color: #FFF
+		height rem(322)
+		margin 1rem auto
+		width rem(288)
+		.titulo
+			background-color: azul-puro
+			border-bottom 3px solid #67b7cf
+			padding .4rem 0
+			position relative
+			span
+				color amarillo
+				font-size: rem(28)
+				left 12px
+				position absolute
+				text-align: center
+				top 10px
+			p
+				color white
+				font-family: JosefinLight
+				font-size: rem(30)
+				text-align:  center
+		.contenido
+			background-color: #FFF
+	.leyendaTitulo
+		color white
+		font-family: JosefinLight
+		font-size: rem(48)
+		margin-top 1rem
+		margin-bottom 1.5rem
+	.ActivitiesBox
+		color white
+		text-align: center
+		margin-bottom 1.5rem
+		h3
+			font-family: OSansReg
+			font-size: 1rem
+	.gallery
+		color texto
+		text-align: center
+		padding-bottom 1rem
+		margin 2rem auto 
+		figure
+			height rem(274)
+			max-width rem(274)
+			position relative
+			margin-left auto
+			margin-right: auto
+			img
+				max-width 100%
+				height auto
+			.hover
+				background-color: azul-puro
+				left -99999
+				opacity: 0
+				position absolute
+				right 0
+				top 0
+				height rem(274)
+				box-sizing: border-box
+				padding-top 40%
+				transition all ease .5s 
+				a
+					&:link
+					&:visited
+						color white
+				span
+					font-size: rem(40)
+					opacity 1
+			&:hover
+				.hover
+					left 0
+					opacity .6
+		
+	.izquierda
+	.derecha
+		color white
+		h2
+			color white
+		p
+			font-size: rem(13)
+			.icon-play
+				font-size: rem(13)
+		.titulo
+			font-family: OSansReg
+			font-size: rem(14)
+			padding-right: 5px
+/*****************************************
+*	8- Footer
+******************************************/
+footer
+	background-color: azul-puro
+	padding .6rem 1rem
+	text-align: center
+	.acerca
+		border-bottom 1px solid #858c94
+		ul
+			li
+				padding .7rem 0
+				a
+					&:link
+					&:visited
+						color white
+						font-size: rem(14)
+						padding 0 .4rem
+						text-decoration: underline
+						text-transform: uppercase
+				span
+					color white
+	.company
+		color white
+		font-size: 14px
+		padding 1rem 0 0 0
+		text-align: center
+		.izquierda
+			padding-bottom .7rem
+			a
+				img
+					max-width 100%
+					height auto
+		.derecha
+			a
+				&:link
+				&:visited
+					color white
+						
+
+
+/*@media screen and (min-width:400px)
+	header
+		&.small
+			background-color: red*/
+	
+@media screen and (min-width:768px)
+	header
+		&.medium
+			clearfix()
+			padding 1.2rem 1.5rem
+			figure
+				float left
+			.info
+				float right
+	.banner
+		&.medium
+			text-align: center
+	section
+		&.medium
+			padding-left 2rem
+			padding-right: 2rem
+	.reviews
+		&.medium
+			.review
+				margin-left auto
+				margin-right: auto
+				max-width 50%
+	.redesSociales
+		&.medium
+			.wrap
+				text-align: center
+			.widget
+				alinear()
+				margin-left 5px
+				margin-right: 5px
+			.ActivitiesBox
+				clearfix()
+				max-width rem(451)
+				margin-left auto
+				margin-right: auto
+				figure
+					float left
+				.contenido
+					float right
+					text-align: left
+					max-width rem(345)
+					padding-left 1rem
+					h3
+						margin-top 0
+			.Galeria
+				text-align: center
+				.gallery
+					alinear()
+					margin-right: 1rem
+					&:nth-child(2n+2)
+						margin-right: 0
+	footer
+		&.medium
+			.acerca
+				ul
+					li
+						alinear()
+						margin auto 10px
+			.company
+				clearfix()
+				.izquierda
+					float left
+					text-align: left
+					a
+						img
+							max-width rem(325)
+				.derecha
+					float right
+					text-align: right
+
+@media screen and (min-width:1000px)
+	header
+		&.large
+			margin 0 auto
+			max-width rem(940)
+			padding-left 0
+			padding-right: 0
+	.banner
+		&.large
+			max-width rem(940)
+			margin-left: auto
+			margin-right: auto
+	section
+		&.large
+			padding-left: 0
+			padding-right: 0
+			.wrap
+				max-width rem(940)
+				margin-left: auto
+				margin-right: auto
+				.texto
+				h5
+					margin-left: auto
+					margin-right: auto
+					max-width rem(730)
+	.reviews
+		&.large
+			clearfix()
+			margin-left auto
+			margin-right: auto
+			max-width rem(940)
+			padding-left: 0
+			padding-right: 0
+			.review
+				box-sizing: border-box
+				float left
+				padding-left 2.5rem
+				padding-right: 2.5rem
+			.caja
+				clearfix()
+				figure
+					float left
+				.contenido
+					float right
+					max-width rem(572)
+					text-align: left
+					h2
+						margin-top 0
+						margin-bottom: .7rem
+					h3
+						margin-top: .6rem
+						margin-bottom .7rem
+	.redesSociales
+		&.large
+			clearfix()
+			background-image: url(../img/piscina.jpg)
+			.wrap
+				max-width rem(940)
+				margin-left auto
+				margin-right: auto
+				text-align: left
+			.widget
+				margin-left: 10px
+				margin-right: 10px
+			.izquierda
+				float left
+				max-width rem(450)
+			.derecha
+				float right
+				max-width rem(450)
+			.leyendaTitulo
+				text-align: center
+			.Galeria
+				.gallery
+					&:nth-child(2n+2)
+						margin-right: 1rem
+					&:nth-child(3n+3)
+						margin-right: 0
+					
+			
+	footer
+		&.large
+			padding-left 0
+			padding-right: 0
+			.wrap
+				margin-left: auto
+				margin-right: auto
+				max-width rem(940)
+			
+			
