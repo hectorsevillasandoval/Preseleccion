@@ -62,7 +62,7 @@ gulp.task('watch', function() {
 gulp.task('uncss', function() {
     // content
     gulp.src('../public/css/main.css')
-        .pipe(uncss({html: ['index.html','accomodations.html','restaurants.html','weddings.html','corporateEvents.html']}))
+        .pipe(uncss({html: ['index.html']}))
         /*.pipe(compressor())*/
         .pipe(gulp.dest('../public/uncss/'));
 });

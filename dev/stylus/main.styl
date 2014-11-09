@@ -35,17 +35,6 @@ azulFooter = #474b5a
 
 //OOCSS
 
-.relativo
-	position relative
-.absoluto
-	position absolute
-.fix
-	overflow hidden
-.left
-	float left
-.right
-	float right
-
 [class^="icon-"], [class*=" icon-"]
 	font-family 'icomoon'
 	speak none
@@ -108,40 +97,254 @@ body
 	font-family: OSansReg
 	font-size: 16px
 	font-weight: normal
+	color headers
 
 
 /*****************************************
 *	1- Cabecera
 ******************************************/
+header
+	padding 1rem 0
+	figure
+		text-align: center
+	.derecha
+		padding 0 .8rem
+		text-align: right
+		ul
+			margin-top: 1rem
+			li
+				alinear()
+				a
+					&:link
+					&:visited
+						color naranja
+						font-size: 1.4rem
+		.info
+			p
+				font-size: .8rem
+				span
+					color naranja
+					vertical-align: middle
+				a
+					&:link
+					&:visited
+						color headers
+					&:hover
+						color naranja
+						text-decoration: underline
 
 /*****************************************
 *	2- Menu
 ******************************************/
-
+nav
+	background-color: gris-bajo
+	padding 0 .3rem
+	position relative
+	text-align: right
+	button
+		background-color: transparent
+		border 0
+		color white
+		font-size: 2rem
+		padding .4rem
+		&:hover
+			color naranja
+	ul
+		background-color: gris-bajo
+		display none
+		left 0
+		opacity .9
+		padding .5rem 1rem 0 1rem
+		position absolute
+		right 0
+		text-align: left
+		top 2.7rem
+		li
+			border-bottom 1px solid #ccc
+			margin .5rem 0
+			padding .5rem 0
+			a
+				&:link
+				&:visited
+					color white
+					text-transform: uppercase
+				&:hover
+					color naranja
+			&:last-child
+				border-bottom 0
 /*****************************************
 *	3- Slider
 ******************************************/
-
+.slide
+	font-size: 0
+	img
+		max-width 100%
+		height auto
 /*****************************************
 *	4- Seccion Principal
 ******************************************/
-
-/*****************************************
-*	5- Reviews
-******************************************/
-
-/*****************************************
-*	6- mapa
-******************************************/
-
-/*****************************************
-*	7- Redes Sociales
-******************************************/
+section
+	padding 1rem 1rem 1.5rem 1rem
+	p
+		font-family: OSansLight
+	h1
+	h2
+		text-align center
+	&.uno
+		background-color: gris0
+		.izquierda
+		.derecha
+			.imagen
+				background-image: url(../img/icons-sprite.png)
+				background-position: -1362px 0
+				background-repeat: no-repeat
+				height rem(168)
+				margin 3rem auto
+				width rem(168)
+			.titulo
+				font-family: OSansLight
+				font-size: rem(30)
+				text-align: center
+				margin .8rem 0
+			.contenido
+				text-align: center
+		.derecha
+			.imagen
+				background-position: -1532px 0
+	&.dos
+		background-color: gris1
+		.calidad
+			text-transform: uppercase
+			text-align: center
+			margin-bottom: 1.5rem
+			span
+				color naranja
+	&.tres
+		background-color: gris2
+		.portafolio
+			font-size: rem(18)
+			margin-bottom: 1.2rem
+			span
+				color naranja
+				font-family: RobotoBold
+		figure
+			font-size: 0
+			img
+				max-width 100%
+				height auto
+	&.cuatro
+		background-color: gris3
+		.alianzas
+			margin-bottom: 1.2rem
+		.caja
+			margin-bottom: 1.5rem
+			figure
+				text-align: center
+			p
+				text-align: center
+	&.marcas
+		background-color: gris0
+		ul
+			li
+				padding 1rem 0
+				a
+					&:link
+					&:visited
+						background-image: url(../img/marcas-sprite.png)
+						background-repeat: no-repeat
+						background-position: 0 0
+						display block
+						margin 0 auto
+					&.vmpre
+						background-position: -310px -37px
+						height 27px
+						width 281px
+						&:hover
+							background-position: -310px -137px
+					&.xconecte
+						background-position: -659px -19px
+						height 62px
+						width 181px
+						&:hover
+							background-position: -659px -119px
+					&.avanza
+						background-position: -65px -19px
+						height 64px
+						width 169px
+						&:hover
+							background-position: -65px -119px
+	&.fundadora
+		background-color: #d8d9db
+		.cabecera
+			border-bottom 2px solid naranja
+			margin-bottom: 3rem
+			padding-bottom: 3rem
+			text-align: center
+			.derecha
+				.naranjita
+					background-color: naranja
+					height 8px
+					margin-bottom: 4px
+				.nombre
+					background-color: #f0f0f0
+					padding .3rem 0
+				.subtitulo
+					border-left 8px solid #f0f0f0
+					color naranja
+					font-family: RobotoMedium
+					font-size: 1.1rem
+					padding 5px 0
+		.skills
+			border-bottom 2px solid naranja
+			ul
+				list-style-type disc
+				margin-left: rem(28)
+				color naranja
+				li
+					margin 10px 0
+					span
+						color headers
 
 /*****************************************
 *	8- Footer
 ******************************************/
-
+footer
+	background-color: azulFooter
+	padding 1.5rem 1rem
+	.izquierda
+		text-align: center
+		margin-bottom: .5rem
+		p
+			color white
+			font-family: OSansLight
+			font-size: 14px
+		img
+			max-width 100%
+			height auto
+	.derecha
+		ul
+			li
+				margin .6rem auto
+				a
+					&:link
+					&:visited
+						display block
+						background-image: url(../img/sprite-footer.png)
+						background-repeat: no-repeat
+						background-position: 0 0
+						margin 0 auto
+						&.vmpre
+							height 12px
+							width 131px
+							background-position: -1px -11px
+						&.xconecte
+							height 29px
+							width 86px
+							background-position: -150px 0
+						&.avanza
+							background-position: -255px -3px
+							height 30px
+							width 81px
 /*@media screen and (min-width:400px)
 	header
 		&.small

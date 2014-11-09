@@ -1,0 +1,546 @@
+@font-face {
+  font-family: icomoon;
+  font-weight: normal;
+  src: url("../fonts/icomoon.eot");
+  src: url("../fonts/icomoon.eot?#iefix") format('embedded-opentype'),url("../fonts/icomoon.woff") format('woff'),url("../fonts/icomoon.ttf") format('truetype'),url("../fonts/icomoon.svg#icomoon") format('svg');
+}
+
+@font-face {
+  font-family: OSansBold;
+  font-weight: normal;
+  src: url("../fonts/opensans-bold-webfont.eot");
+  src: url("../fonts/opensans-bold-webfont.eot?#iefix") format('embedded-opentype'),url("../fonts/opensans-bold-webfont.woff") format('woff'),url("../fonts/opensans-bold-webfont.ttf") format('truetype'),url("../fonts/opensans-bold-webfont.svg#opensans-bold-webfont") format('svg');
+}
+
+@font-face {
+  font-family: OSansLight;
+  font-weight: normal;
+  src: url("../fonts/opensans-light-webfont.eot");
+  src: url("../fonts/opensans-light-webfont.eot?#iefix") format('embedded-opentype'),url("../fonts/opensans-light-webfont.woff") format('woff'),url("../fonts/opensans-light-webfont.ttf") format('truetype'),url("../fonts/opensans-light-webfont.svg#opensans-light-webfont") format('svg');
+}
+
+@font-face {
+  font-family: OSansReg;
+  font-weight: normal;
+  src: url("../fonts/opensans-regular-webfont.eot");
+  src: url("../fonts/opensans-regular-webfont.eot?#iefix") format('embedded-opentype'),url("../fonts/opensans-regular-webfont.woff") format('woff'),url("../fonts/opensans-regular-webfont.ttf") format('truetype'),url("../fonts/opensans-regular-webfont.svg#opensans-regular-webfont") format('svg');
+}
+
+@font-face {
+  font-family: RobotoBold;
+  font-weight: normal;
+  src: url("../fonts/roboto-bold-webfont.eot");
+  src: url("../fonts/roboto-bold-webfont.eot?#iefix") format('embedded-opentype'),url("../fonts/roboto-bold-webfont.woff") format('woff'),url("../fonts/roboto-bold-webfont.ttf") format('truetype'),url("../fonts/roboto-bold-webfont.svg#roboto-bold-webfont") format('svg');
+}
+
+@font-face {
+  font-family: RobotoMedium;
+  font-weight: normal;
+  src: url("../fonts/roboto-medium-webfont.eot");
+  src: url("../fonts/roboto-medium-webfont.eot?#iefix") format('embedded-opentype'),url("../fonts/roboto-medium-webfont.woff") format('woff'),url("../fonts/roboto-medium-webfont.ttf") format('truetype'),url("../fonts/roboto-medium-webfont.svg#roboto-medium-webfont") format('svg');
+}
+
+/* normalize.css v3.0.0 | MIT License | git.io/normalize */
+
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+figure,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+
+a {
+  background: transparent;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+strong {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 2em;
+  margin: .67em 0;
+}
+
+img {
+  border: 0;
+}
+
+figure {
+  margin: 1em 40px;
+}
+
+button {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+button {
+  overflow: visible;
+}
+
+button {
+  text-transform: none;
+}
+
+button {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+[class^="icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-reorder:before {
+  content: "\e600";
+}
+
+.icon-mapmarker:before {
+  content: "\e601";
+}
+
+.icon-facebook-square:before {
+  content: "\f082";
+}
+
+.icon-linkedin-square:before {
+  content: "\f08c";
+}
+
+.icon-phone:before {
+  content: "\f095";
+}
+
+.icon-mail-color:before {
+  content: "\f0e0";
+}
+
+html {
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+p,
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  font-family: RobotoBold;
+  font-size: 1.875rem;
+  color: #4d4d4d;
+}
+
+h2 {
+  font-family: RobotoBold;
+  font-size: 1.5rem;
+  color: #4d4d4d;
+}
+
+body {
+  font-family: OSansReg;
+  font-size: 16px;
+  font-weight: normal;
+  color: #4d4d4d;
+}
+
+header {
+  padding: 1rem 0;
+}
+
+header figure {
+  text-align: center;
+}
+
+header .derecha {
+  padding: 0 .8rem;
+  text-align: right;
+}
+
+header .derecha ul {
+  margin-top: 1rem;
+}
+
+header .derecha ul li {
+  display: inline-block;
+  vertical-align: top;
+}
+
+header .derecha ul li a:link,
+header .derecha ul li a:visited {
+  color: #d5662b;
+  font-size: 1.4rem;
+}
+
+header .derecha .info p {
+  font-size: .8rem;
+}
+
+header .derecha .info p span {
+  color: #d5662b;
+  vertical-align: middle;
+}
+
+header .derecha .info p a:link,
+header .derecha .info p a:visited {
+  color: #4d4d4d;
+}
+
+header .derecha .info p a:hover {
+  color: #d5662b;
+  text-decoration: underline;
+}
+
+nav {
+  background-color: #909194;
+  padding: 0 .3rem;
+  position: relative;
+  text-align: right;
+}
+
+nav button {
+  background-color: transparent;
+  border: 0;
+  color: #fff;
+  font-size: 2rem;
+  padding: .4rem;
+}
+
+nav button:hover {
+  color: #d5662b;
+}
+
+nav ul {
+  background-color: #909194;
+  display: none;
+  left: 0;
+  opacity: .9;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+  filter: alpha(opacity=90);
+  padding: .5rem 1rem 0 1rem;
+  position: absolute;
+  right: 0;
+  text-align: left;
+  top: 2.7rem;
+}
+
+nav ul li {
+  border-bottom: 1px solid #ccc;
+  margin: .5rem 0;
+  padding: .5rem 0;
+}
+
+nav ul li a:link,
+nav ul li a:visited {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+nav ul li a:hover {
+  color: #d5662b;
+}
+
+nav ul li:last-child {
+  border-bottom: 0;
+}
+
+.slide {
+  font-size: 0;
+}
+
+.slide img {
+  max-width: 100%;
+  height: auto;
+}
+
+section {
+  padding: 1rem 1rem 1.5rem 1rem;
+}
+
+section p {
+  font-family: OSansLight;
+}
+
+section h1,
+section h2 {
+  text-align: center;
+}
+
+section.uno {
+  background-color: #edeeef;
+}
+
+section.uno .izquierda .imagen,
+section.uno .derecha .imagen {
+  background-image: url("../img/icons-sprite.png");
+  background-position: -1362px 0;
+  background-repeat: no-repeat;
+  height: 10.5rem;
+  margin: 3rem auto;
+  width: 10.5rem;
+}
+
+section.uno .izquierda .titulo,
+section.uno .derecha .titulo {
+  font-family: OSansLight;
+  font-size: 1.875rem;
+  text-align: center;
+  margin: .8rem 0;
+}
+
+section.uno .izquierda .contenido,
+section.uno .derecha .contenido {
+  text-align: center;
+}
+
+section.uno .derecha .imagen {
+  background-position: -1532px 0;
+}
+
+section.dos {
+  background-color: #e3e5e7;
+}
+
+section.dos .calidad {
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+section.dos .calidad span {
+  color: #d5662b;
+}
+
+section.tres {
+  background-color: #dbdddf;
+}
+
+section.tres .portafolio {
+  font-size: 1.125rem;
+  margin-bottom: 1.2rem;
+}
+
+section.tres .portafolio span {
+  color: #d5662b;
+  font-family: RobotoBold;
+}
+
+section.tres figure {
+  font-size: 0;
+}
+
+section.tres figure img {
+  max-width: 100%;
+  height: auto;
+}
+
+section.cuatro {
+  background-color: #ced0d3;
+}
+
+section.cuatro .alianzas {
+  margin-bottom: 1.2rem;
+}
+
+section.cuatro .caja {
+  margin-bottom: 1.5rem;
+}
+
+section.cuatro .caja figure {
+  text-align: center;
+}
+
+section.cuatro .caja p {
+  text-align: center;
+}
+
+section.marcas {
+  background-color: #edeeef;
+}
+
+section.marcas ul li {
+  padding: 1rem 0;
+}
+
+section.marcas ul li a:link,
+section.marcas ul li a:visited {
+  background-image: url("../img/marcas-sprite.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  display: block;
+  margin: 0 auto;
+}
+
+section.marcas ul li a.vmpre {
+  background-position: -310px -37px;
+  height: 27px;
+  width: 281px;
+}
+
+section.marcas ul li a.vmpre:hover {
+  background-position: -310px -137px;
+}
+
+section.marcas ul li a.xconecte {
+  background-position: -659px -19px;
+  height: 62px;
+  width: 181px;
+}
+
+section.marcas ul li a.xconecte:hover {
+  background-position: -659px -119px;
+}
+
+section.marcas ul li a.avanza {
+  background-position: -65px -19px;
+  height: 64px;
+  width: 169px;
+}
+
+section.marcas ul li a.avanza:hover {
+  background-position: -65px -119px;
+}
+
+section.fundadora {
+  background-color: #d8d9db;
+}
+
+section.fundadora .cabecera {
+  border-bottom: 2px solid #d5662b;
+  margin-bottom: 3rem;
+  padding-bottom: 3rem;
+  text-align: center;
+}
+
+section.fundadora .cabecera .derecha .naranjita {
+  background-color: #d5662b;
+  height: 8px;
+  margin-bottom: 4px;
+}
+
+section.fundadora .cabecera .derecha .nombre {
+  background-color: #f0f0f0;
+  padding: .3rem 0;
+}
+
+section.fundadora .cabecera .derecha .subtitulo {
+  border-left: 8px solid #f0f0f0;
+  color: #d5662b;
+  font-family: RobotoMedium;
+  font-size: 1.1rem;
+  padding: 5px 0;
+}
+
+section.fundadora .skills {
+  border-bottom: 2px solid #d5662b;
+}
+
+section.fundadora .skills ul {
+  list-style-type: disc;
+  margin-left: 1.75rem;
+  color: #d5662b;
+}
+
+section.fundadora .skills ul li {
+  margin: 10px 0;
+}
+
+section.fundadora .skills ul li span {
+  color: #4d4d4d;
+}
+
+footer {
+  background-color: #474b5a;
+  padding: 1.5rem 1rem;
+}
+
+footer .izquierda {
+  text-align: center;
+  margin-bottom: .5rem;
+}
+
+footer .izquierda p {
+  color: #fff;
+  font-family: OSansLight;
+  font-size: 14px;
+}
+
+footer .izquierda img {
+  max-width: 100%;
+  height: auto;
+}
+
+footer .derecha ul li {
+  margin: .6rem auto;
+}
+
+footer .derecha ul li a:link,
+footer .derecha ul li a:visited {
+  display: block;
+  background-image: url("../img/sprite-footer.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  margin: 0 auto;
+}
+
+footer .derecha ul li a:link.vmpre,
+footer .derecha ul li a:visited.vmpre {
+  height: 12px;
+  width: 131px;
+  background-position: -1px -11px;
+}
+
+footer .derecha ul li a:link.xconecte,
+footer .derecha ul li a:visited.xconecte {
+  height: 29px;
+  width: 86px;
+  background-position: -150px 0;
+}
+
+footer .derecha ul li a:link.avanza,
+footer .derecha ul li a:visited.avanza {
+  background-position: -255px -3px;
+  height: 30px;
+  width: 81px;
+}
