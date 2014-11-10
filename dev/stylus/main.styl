@@ -225,10 +225,19 @@ section
 			font-size: 18px
 			text-align: center
 	&.consultoria
+		.avanza
+			background-image: url(../img/marcas-sprite.png)
+			background-repeat: no-repeat
+			background-position: -65px -119px
+			height rem(64)
+			margin 2.5rem auto
+			width rem(170)
 		article
 			padding rem(80) 0
 			&.gris
 				background-color: #f0f1f2
+			p
+				font-size: 14px
 			.imagen
 				background-image: url(../img/icons-sprite.png)
 				background-repeat: no-repeat
@@ -478,6 +487,28 @@ footer
 				max-width rem(583)
 				margin-left: auto
 				margin-right: auto
+	.consultoria
+		&.medium
+			padding-left 0
+			padding-right 0 !important
+			.texto
+				font-size: 14px
+				margin-left: auto
+				margin-right: auto
+				max-width rem(542)
+			article
+				clearfix()
+				padding-left: 1rem
+				padding-right: 1rem
+				.imagen
+					display inline-block
+					margin-right: 2rem
+					vertical-align: middle
+				.especial
+					display inline-block
+					max-width rem(520)
+					vertical-align: middle
+	
 	.tres
 		&.medium
 			figure
@@ -615,6 +646,12 @@ footer
 						text-align: left
 					.imagen
 						margin-top: 2rem
+	.consultoria
+		&.large
+			.wrap
+				text-align: center
+				.especial
+					text-align: left
 	.uno
 		&.large
 			.especial
