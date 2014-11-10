@@ -307,6 +307,60 @@ section h2 {
   text-align: center;
 }
 
+section.seleccion .imagen {
+  background-image: url("../img/marcas-sprite.png");
+  background-position: -310px -137px;
+  background-repeat: no-repeat;
+  height: 1.75rem;
+  margin: 3rem auto;
+  width: 17.5625rem;
+}
+
+section.seleccion .imagen.xconecte {
+  background-position: -660px -119px;
+  height: 3.9375rem;
+  width: 11.3125rem;
+}
+
+section.proveedor {
+  background-color: #f0f1f2;
+}
+
+section.proveedor .especial .texto {
+  margin: 1rem 0;
+}
+
+section.proveedor .especial figure {
+  text-align: center;
+}
+
+section.proveedor .especial figure img {
+  max-width: 100%;
+  height: auto;
+}
+
+section.proceso {
+  background-color: #e3e5e7;
+}
+
+section.proceso figure {
+  text-align: center;
+}
+
+section.proceso figure img {
+  max-width: 100%;
+  height: auto;
+}
+
+section.compromiso {
+  background-color: #d8d9db;
+}
+
+section.compromiso .mensaje {
+  font-size: 18px;
+  text-align: center;
+}
+
 section.uno {
   background-color: #edeeef;
 }
@@ -569,6 +623,63 @@ footer .derecha ul li a:visited.avanza {
     float: right;
   }
 
+  .seleccion.medium p {
+    max-width: 33.5625rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .seleccion.medium p.contenido {
+    max-width: 33.375rem;
+    text-align: center;
+  }
+
+  .proveedor.medium .especial {
+    max-width: 39.125rem;
+    margin-left: auto;
+    margin-right: auto;
+    zoom: 1;
+  }
+
+  .proveedor.medium .especial:before,
+  .proveedor.medium .especial:after {
+    content: "";
+    display: table;
+  }
+
+  .proveedor.medium .especial:after {
+    clear: both;
+  }
+
+  .proveedor.medium .especial .texto {
+    float: left;
+    font-size: 14px;
+    margin: 0;
+    max-width: 17.4375rem;
+    text-align: right;
+  }
+
+  .proveedor.medium .especial figure {
+    float: right;
+  }
+
+  .proceso.medium {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .compromiso.medium .mensaje {
+    max-width: 25.1875rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .compromiso.medium .texto {
+    max-width: 36.4375rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .tres.medium figure {
     text-align: center;
   }
@@ -778,6 +889,45 @@ footer .derecha ul li a:visited.avanza {
 
   .slide.large {
     background-color: #c1cbe0;
+  }
+
+  .seleccion.large .especial {
+    zoom: 1;
+    max-width: 51.625rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .seleccion.large .especial:before,
+  .seleccion.large .especial:after {
+    content: "";
+    display: table;
+  }
+
+  .seleccion.large .especial:after {
+    clear: both;
+  }
+
+  .seleccion.large .especial .izquierda {
+    float: left;
+  }
+
+  .seleccion.large .especial .izquierda .contenido {
+    max-width: 23.375rem;
+    text-align: left;
+  }
+
+  .seleccion.large .especial .derecha {
+    float: right;
+  }
+
+  .seleccion.large .especial .derecha .contenido {
+    max-width: 24.8125rem;
+    text-align: left;
+  }
+
+  .seleccion.large .especial .derecha .imagen {
+    margin-top: 2rem;
   }
 
   .uno.large .especial {

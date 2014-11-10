@@ -190,6 +190,41 @@ section
 	h1
 	h2
 		text-align center
+	&.seleccion
+		.imagen
+			background-image: url(../img/marcas-sprite.png)
+			background-position: -310px -137px
+			background-repeat: no-repeat
+			height rem(28)
+			margin 3rem auto
+			width rem(281)
+			&.xconecte
+				background-position: -660px -119px
+				height rem(63)
+				width rem(181)
+	&.proveedor
+		background-color: #f0f1f2
+		.especial
+			.texto
+				margin 1rem 0
+			figure
+				text-align: center
+				img
+					max-width 100%
+					height auto
+	&.proceso
+		background-color: #e3e5e7
+		figure
+			text-align: center
+			img
+				max-width 100%
+				height auto
+	&.compromiso
+		background-color: #d8d9db
+		.mensaje
+			font-size: 18px
+			text-align: center
+				
 	&.uno
 		background-color: gris0
 		.izquierda
@@ -359,6 +394,44 @@ footer
 				float left
 			.derecha
 				float right
+	.seleccion
+		&.medium
+			p
+				max-width rem(537)
+				margin-left: auto
+				margin-right: auto
+				&.contenido
+					max-width rem(534)
+					text-align: center
+	.proveedor
+		&.medium
+			.especial
+				max-width rem(626)
+				margin-left: auto
+				margin-right: auto
+				clearfix()
+				.texto
+					float left
+					font-size: 14px
+					margin 0
+					max-width rem(279)
+					text-align: right
+				figure
+					float right
+	.proceso
+		&.medium
+			padding-top 2rem
+			padding-bottom: 2rem
+	.compromiso
+		&.medium
+			.mensaje
+				max-width rem(403)
+				margin-left: auto
+				margin-right: auto
+			.texto
+				max-width rem(583)
+				margin-left: auto
+				margin-right: auto
 	.tres
 		&.medium
 			figure
@@ -477,6 +550,25 @@ footer
 	.slide
 		&.large
 			background-color: #c1cbe0
+	.seleccion
+		&.large
+			.especial
+				clearfix()
+				max-width rem(826)
+				margin-left: auto
+				margin-right: auto
+				.izquierda
+					float left
+					.contenido
+						max-width rem(374)
+						text-align: left
+				.derecha
+					float right
+					.contenido
+						max-width rem(397)
+						text-align: left
+					.imagen
+						margin-top: 2rem
 	.uno
 		&.large
 			.especial
