@@ -93,6 +93,37 @@ h2
 	font-family: RobotoBold
 	font-size: rem(24)
 	color headers
+h3
+	font-family: RobotoBold
+	font-size: rem(36)
+	color headers
+	margin-top: 0
+input[type="text"]
+input[type="mail"]
+	border 1px solid #d0dee7
+	box-sizing border-box
+	height 30px
+	padding-left: .7rem
+	width 100%
+textarea
+	border 1px solid #d0dee7
+	box-sizing border-box
+	padding-left: .7rem
+	width 100%
+.boton
+	background-color: naranja
+	height 40px
+	width 170px
+	box-sizing: border-box
+	padding .5rem 0
+	text-align: center
+	margin 1.5rem auto
+	a
+		&:link
+		&:visited
+			color white
+			text-transform: uppercase
+			font-size: 14px
 body
 	font-family: OSansReg
 	font-size: 16px
@@ -261,25 +292,46 @@ section
 					background-position: -1020px 0
 				&.outplacement
 					background-position: -1190px 0
-			.boton
-				background-color: naranja
-				height 40px
-				width 170px
-				box-sizing: border-box
-				padding .5rem 0
-				text-align: center
-				margin 1.5rem auto
-				a
-					&:link
-					&:visited
-						color white
-						text-transform: uppercase
-						font-size: 14px
 			p
 				span
 					font-family: OSansBold
 					font-size: 18px
-				
+	&.ofertas
+		padding-left 0
+		padding-right: 0
+		padding-bottom: 0
+		figure
+			font-size: 0
+			margin 1.5rem auto
+			img
+				max-width 100%
+				height auto
+		.texto
+			padding-left: 1rem
+			padding-right: 1rem
+		article
+			padding rem(40) 1rem
+			h3
+				text-align: center
+			&.aplicar
+				background-color: #e9ebee
+				.caja
+					figure
+						text-align: center
+			&.cv
+				background-color: #f0f1f2
+				.tituloForm
+					font-family: RobotoBold
+					font-size: rem(18)
+					margin-bottom rem(40)
+				.wrap
+					.datos
+					.experiencia
+						margin-bottom rem(40)
+			label
+				display block
+				text-transform: capitalize
+				margin 10px 0 0 0
 	&.uno
 		background-color: gris0
 		.izquierda
