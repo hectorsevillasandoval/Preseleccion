@@ -297,6 +297,37 @@ section
 					font-family: OSansBold
 					font-size: 18px
 	&.ofertas
+		.oferta
+			background-color: #f0f1f2
+			padding 2rem 0
+			border-bottom 14px solid #dddddd
+			margin-bottom 2.3rem
+			h4
+				font-size: 18px
+				text-align center
+			.borde
+				background-color: naranja
+				height 8px
+				max-width 100%
+				margin-bottom 1rem
+			ul
+			.detalle
+				font-size: 14px
+				max-width 80%
+				margin-left: auto
+				margin-right: auto
+			.detalle
+				li
+					color naranja
+					list-style-type disc
+					span
+						color headers
+		figure
+			text-align: center
+			img
+				max-width 100%
+				height auto
+	&.candidatos
 		padding-left 0
 		padding-right: 0
 		padding-bottom: 0
@@ -562,6 +593,23 @@ footer
 					vertical-align: middle
 	.ofertas
 		&.medium
+			.oferta
+				h4
+					max-width 80%
+					margin-left: auto
+					margin-right: auto
+					text-align: left
+				.borde
+					max-width 50%
+				
+			.paginador
+				clearfix()
+				.izquierda
+					float left
+				.derecha
+					float right
+	.candidatos
+		&.medium
 			.cv
 				.wrap
 					max-width rem(700)
@@ -581,6 +629,22 @@ footer
 								textarea
 									float right
 									max-width 55%
+			.formularioActualizacion
+				.wrap
+					max-width rem(700)
+					margin-left: auto
+					margin-right: auto
+					.izquierda
+					.derecha
+						> div
+							clearfix()
+							margin-bottom: .7rem
+							label
+								float left
+							input
+							textarea
+								float right
+								max-width 55%
 	
 	.tres
 		&.medium
@@ -725,8 +789,24 @@ footer
 				text-align: center
 				.especial
 					text-align: left
-	.ofertas
+	.candidatos
 		&.large
+			.infografia
+				text-align: center
+			.aplicar
+				.caja
+					clearfix()
+					margin-left: auto
+					margin-right: auto
+					max-width rem(630)
+					figure
+						float left
+					.derecha
+						float right
+						max-width rem(500)
+						text-align: left
+						h2
+							text-align: left
 			.cv
 				.wrap
 					max-width rem(940)
@@ -737,6 +817,30 @@ footer
 							clearfix()
 							margin-bottom: 2rem
 							padding 0
+						.izquierda
+							display inline-block
+							vertical-align: top
+							width 45%
+							label
+								max-width 35%
+								font-size: 14px
+						.derecha
+							display inline-block
+							float right
+							vertical-align: top
+							width 45%
+							label
+								max-width 30%
+			.actualiza
+				background-color: #e3e5e7
+			.formularioActualizacion
+				background-color: #d8d9db
+				.wrap
+					max-width rem(940)
+					article
+						clearfix()
+						margin-bottom: 2rem
+						padding 0
 						.izquierda
 							display inline-block
 							vertical-align: top
